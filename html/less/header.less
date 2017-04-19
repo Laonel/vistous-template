@@ -1,0 +1,169 @@
+.header {
+	position: relative;
+	width: 100%;
+	height: auto;
+	z-index: 1001;
+}
+
+.header {
+
+	.main-header {
+		position: relative;
+		width: 100%;
+		height: auto;
+		border-bottom: 1px solid @borderColorLight;
+		.Transition(.35s height ease-in);
+	}
+
+	.topbar {
+		position: relative;
+		width: 100%;
+		height: auto;
+		border-bottom: 1px solid @borderColorLight;
+		overflow: hidden;
+	}
+
+	.bottombar {
+		position: relative;
+		width: 100%;
+		height: auto;
+		border-bottom: 1px solid @borderColorLight;
+		overflow: hidden;
+	}
+
+}
+
+.header {
+
+	.main-header, .topbar, .bottombar {
+		&.no-border {
+			border-color: transparent !important;
+		}
+	}
+
+}
+
+.header {
+
+	.header-container {
+		position: relative;
+		display: table;
+
+		&.container-fluid {
+			width: 100%;
+		}
+	}
+
+	.header-container .header-row {
+		display: table-row;
+		clear: both;
+	}
+
+	.header-container .header-column {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+}
+
+// Logo
+.header {
+
+	.logo-wrapper {
+		float: left;
+
+		img {
+			width: 100%;
+			height: 100%;
+
+			.Transition(.35s all ease-in-out);
+		}
+	}
+
+	.logo-light {
+		display: none;
+	}
+
+}
+
+// Overlay header
+.header.header-overlay {
+	position: absolute;
+}
+
+/*
+ * Header and header navigation styles for sticky header
+ */
+.is_stick {
+	position: fixed !important;
+	top: 0 !important;
+}
+
+.is_stick {
+
+	&.sticky-condensed {
+
+		.logo-wrapper {
+
+			img {
+				width: 75%;
+				height: 75%;
+			}
+
+		}
+
+		.nav-wrapper {
+			height: 60px;
+
+			.mobile-nav {
+				height: 60px;
+			}
+
+			.main-nav > li > a {
+				padding-top: 20px !important;
+				padding-bottom: 20px !important;
+			}
+		}
+
+		.slicknav_btn {
+			line-height: 60px;
+			height: 60px;
+		}
+
+	}
+
+}
+
+body.header-stick {
+
+	.wrapper {
+		margin-top: 60px;
+	}
+
+}
+
+// Styles for header with dark background
+.header.font-white, .font-white .header, .header .font-white {
+
+	// Logo
+	.logo-light {
+		display: block;
+	}
+
+	.logo-dark {
+		display: none;
+	}
+
+	.main-header, &.main-header {
+		border-color: fade(#fff, 20%);
+	}
+
+	.topbar, &.topbar {
+		border-bottom-color: fade(#fff, 20%);
+	}
+
+	.bottombar, &.bottombar {
+		border-bottom-color: fade(#fff, 20%);
+	}
+
+}

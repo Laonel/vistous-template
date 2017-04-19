@@ -1,0 +1,572 @@
+body {
+	font-family: @fontFamilyBody;
+	font-size: @fontSizeBase;
+	line-height: @lineHeightBase;
+	color: @textColorLight;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @fontFamilyHeading;
+	line-height: @lineHeightBase;
+	color: @textColorDark;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+}
+
+h5, h6 {
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 26px;
+}
+
+h5 {
+	font-size: 22px;
+}
+
+h6 {
+	font-size: 18px;
+}
+
+a {
+	font-size: inherit;
+	line-height: @lineHeightBase;
+}
+
+a, a:hover, a:active, a:focus, a:visited {
+	text-decoration: none;
+	color: @textColorMiddle;
+	outline: none;
+	.Transition(all .2s ease-in-out);
+}
+
+a:hover {
+	
+}
+
+*:focus {
+	outline: none;
+}
+
+p {
+	margin: 0 0 2em 0;
+}
+
+hr {
+	width: 100%;
+	margin: 20px 0;
+	height: 1px;
+	background-color: @borderColorLight;
+	border: 0;
+}
+
+
+// Text utility classes
+.align-left {
+	text-align: left !important;
+}
+
+.align-center {
+	text-align: center !important;
+}
+
+.align-right {
+	text-align: right !important;
+}
+
+.font-alt {
+	font-family: @fontFamilyHeading !important;
+}
+
+.font-serif {
+	font-family: @fontFamilySerif !important;
+}
+
+.text-lowercase {
+	text-transform: lowercase !important;
+}
+
+.text-capitalize {
+	text-transform: capitalize !important;
+}
+
+.text-uppercase {
+	text-transform: uppercase !important;
+}
+
+.text-color {
+	color: @themeColor !important;
+}
+
+.text-italic {
+	font-style: italic !important;
+}
+
+.text-dark {
+	color: @textColorDark !important;
+}
+
+.text-middle {
+	color: @textColorMiddle !important;
+}
+
+.text-light {
+	color: @textColorLight !important;
+}
+
+.font-weight-light {
+	font-weight: 300;
+
+	strong, b {
+		font-weight: 400;
+	}
+}
+
+.font-weight-normal {
+	font-weight: 400;
+
+	strong, b {
+		font-weight: 600;
+	}
+}
+
+.font-weight-medium {
+	font-weight: 500;
+
+	strong, b {
+		font-weight: 600;
+	}
+}
+
+.font-weight-semibold {
+	font-weight: 600;
+
+	strong, b {
+		font-weight: 700;
+	}
+}
+
+.font-weight-bold {
+	font-weight: 700;
+
+	strong, b {
+		font-weight: 800;
+	}
+}
+
+.font-weight-extrabold {
+	font-weight: 800;
+
+	strong, b {
+		font-weight: 900;
+	}
+}
+
+.font-weight-ultrabold {
+	font-weight: 900;
+
+	strong, b {
+		font-weight: 900;
+	}
+}
+
+/*
+.font-size-100 is 0.08 percent of container width
+
+container xsmall: 100%
+container small: 750
+container medium: 970
+container large: 1140
+
+*/
+
+.font-size-10 { font-size: 8px; }
+.font-size-11 { font-size: 9px; }
+.font-size-12 { font-size: 10px; }
+.font-size-13 {	font-size: 12px; }
+.font-size-14 {	font-size: 14px; }
+.font-size-15 {	font-size: 15px; }
+.font-size-16 {	font-size: 16px; }
+.font-size-18 {	font-size: 18px; }
+.font-size-20 {	font-size: 20px; }
+.font-size-22 {	font-size: 20px; }
+.font-size-24 {	font-size: 22px; }
+.font-size-26 {	font-size: 22px; }
+.font-size-28 {	font-size: 24px; }
+.font-size-30 {	font-size: 24px; }
+.font-size-32 {	font-size: 26px; }
+.font-size-34 { font-size: 26px; }
+.font-size-36 { font-size: 28px; }
+.font-size-38 { font-size: 28px; }
+.font-size-40 { font-size: 28px; }
+.font-size-42 { font-size: 30px; }
+.font-size-44 { font-size: 30px; }
+.font-size-46 { font-size: 30px; }
+.font-size-48 { font-size: 32px; }
+.font-size-50 { font-size: 32px; }
+.font-size-52 { font-size: 32px; }
+.font-size-54 { font-size: 32px; }
+.font-size-56 { font-size: 32px; }
+.font-size-58 { font-size: 34px; }
+.font-size-60 { font-size: 34px; }
+.font-size-62 { font-size: 34px; }
+.font-size-64 { font-size: 34px; }
+.font-size-66 { font-size: 34px; }
+.font-size-68 { font-size: 34px; }
+.font-size-70 { font-size: 36px; }
+.font-size-72 { font-size: 36px; }
+.font-size-74 { font-size: 36px; }
+.font-size-76 { font-size: 36px; }
+.font-size-78 { font-size: 36px; }
+.font-size-80 { font-size: 36px; }
+.font-size-82 { font-size: 36px; }
+.font-size-84 { font-size: 36px; }
+.font-size-86 { font-size: 38px; }
+.font-size-88 { font-size: 38px; }
+.font-size-90 { font-size: 38px; }
+.font-size-92 { font-size: 38px; }
+.font-size-94 { font-size: 38px; }
+.font-size-96 { font-size: 38px; }
+.font-size-98 { font-size: 38px; }
+.font-size-100 { font-size: 40px; }
+
+.line-height-1 { line-height: 1; }
+.line-height-11 { line-height: 1.1; }
+.line-height-12 { line-height: 1.2; }
+.line-height-13 { line-height: 1.3; }
+.line-height-14 { line-height: 1.4; }
+.line-height-15 { line-height: 1.5; }
+.line-height-16 { line-height: 1.6; }
+.line-height-17 { line-height: 1.7; }
+.line-height-18 { line-height: 1.8; }
+.line-height-19 { line-height: 1.9; }
+.line-height-2 { line-height: 2; }
+
+.letter-spacing-normal { letter-spacing: normal; }
+.letter-spacing-0 { letter-spacing: 0; }
+.letter-spacing-01 { letter-spacing: 0.1em; }
+.letter-spacing-02 { letter-spacing: 0.2em; }
+.letter-spacing-03 { letter-spacing: 0.3em; }
+.letter-spacing-04 { letter-spacing: 0.4em; }
+.letter-spacing-05 { letter-spacing: 0.5em; }
+.letter-spacing-06 { letter-spacing: 0.6em; }
+.letter-spacing-07 { letter-spacing: 0.7em; }
+.letter-spacing-08 { letter-spacing: 0.8em; }
+.letter-spacing-09 { letter-spacing: 0.9em; }
+.letter-spacing-1 { letter-spacing: 1em; }
+
+// Lists
+.list-style-none {
+	list-style: none;
+	padding: 0;
+}
+
+// Blockquotes
+blockquote {
+	font-size: 16px;
+	color: @textColorLight;
+	border: 1px solid transparent;
+	background-color: transparent;
+
+	footer {
+		color: @textColorMiddle;
+		line-height: @lineHeightBase;
+	}
+}
+
+blockquote {
+
+	&.bq-border {
+		border-left-color: @borderColorLight;
+	}
+
+	&.bq-bg-light {
+		background-color: #f9f9f9;
+		padding: 20px;
+	}
+
+	&.bq-bg-dark {
+		background-color: #2f2f2f;
+		color: @whiteTextColorLight;
+		padding: 20px;
+
+		> * {
+			color: @whiteTextColorLight;
+		}
+
+		footer {
+			color: @whiteTextColorMiddle !important;
+		}
+	}
+
+	&.bq-left {
+		text-align: left;
+
+		> * {
+			text-align: left;
+		}
+
+		&.bq-border {
+			border-color: transparent;
+			border-left-color: @borderColorLight;
+		}
+	}
+
+	&.bq-center {
+		text-align: center;
+
+		> * {
+			text-align: center;
+		}
+
+		&.bq-border {
+			border-color: transparent;
+			border-top-color: @borderColorLight;
+		}
+	}
+
+	&.bq-right {
+		text-align: right;
+
+		> * {
+			text-align: right;
+		}
+
+		&.bq-border {
+			border-color: transparent;
+			border-right-color: @borderColorLight;
+		}
+	}
+
+}
+
+
+// Code
+code {
+	background-color: #f9f9f9;
+	color: @themeColor;
+	.BorderRadius(2px);
+}
+
+pre {
+	background-color: #f9f9f9;
+	border-color: @borderColorLight;
+	.BorderRadius(0);
+	color: @textColorMiddle;
+	line-height: @lineHeightBase;
+	font-size: 14px;
+}
+
+.title-inline {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+// White font styles
+.font-white {
+
+	color: @whiteTextColorLight !important;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: @whiteTextColorDark !important;
+	}
+
+	a:not(.btn):hover {
+		color: @whiteTextColorMiddle;
+	}
+
+	.text-dark {
+		color: @whiteTextColorDark !important;
+	}
+
+	.text-middle {
+		color: @whiteTextColorMiddle !important;
+	}
+
+	.text-light {
+		color: @whiteTextColorLight !important;
+	}
+
+	// Blockquotes
+	blockquote {
+		color: @whiteTextColorLight;
+
+		footer {
+			color: @whiteTextColorMiddle;
+		}
+	}
+
+	blockquote {
+
+		&.bq-border {
+			border-left-color: #232323;
+		}
+
+		&.bq-bg-light {
+			background-color: #c9c9c9;
+		}
+
+		&.bq-bg-dark {
+			background-color: #232323;
+			color: @textColorLight;
+
+			> * {
+				color: @textColorLight;
+			}
+
+			footer {
+				color: @textColorMiddle !important;
+			}
+		}
+
+		&.bq-left {
+			&.bq-border {
+				border-color: transparent;
+				border-left-color: #232323;
+			}
+		}
+
+		&.bq-center {
+			&.bq-border {
+				border-color: transparent;
+				border-top-color: #232323;
+			}
+		}
+
+		&.bq-right {
+			&.bq-border {
+				border-color: transparent;
+				border-right-color: #232323;
+			}
+		}
+
+	}
+
+}
+
+// Media Queries
+@media (min-width: 768px) {
+	.font-size-10 { font-size: 9px; }
+	.font-size-11 { font-size: 10px; }
+	.font-size-12 { font-size: 11px; }
+	.font-size-13 {	font-size: 12px; }
+	.font-size-14 {	font-size: 14px; }
+	.font-size-15 {	font-size: 15px; }
+	.font-size-16 {	font-size: 16px; }
+	.font-size-18 {	font-size: 18px; }
+	.font-size-20 {	font-size: 20px; }
+	.font-size-22 {	font-size: 20px; }
+	.font-size-24 {	font-size: 22px; }
+	.font-size-26 {	font-size: 22px; }
+	.font-size-28 {	font-size: 24px; }
+	.font-size-30 {	font-size: 24px; }
+	.font-size-32 {	font-size: 26px; }
+	.font-size-34 { font-size: 26px; }
+	.font-size-36 { font-size: 28px; }
+	.font-size-38 { font-size: 28px; }
+	.font-size-40 { font-size: 30px; }
+	.font-size-42 { font-size: 30px; }
+	.font-size-44 { font-size: 32px; }
+	.font-size-46 { font-size: 32px; }
+	.font-size-48 { font-size: 32px; }
+	.font-size-50 { font-size: 34px; }
+	.font-size-52 { font-size: 34px; }
+	.font-size-54 { font-size: 36px; }
+	.font-size-56 { font-size: 36px; }
+	.font-size-58 { font-size: 38px; }
+	.font-size-60 { font-size: 38px; }
+	.font-size-62 { font-size: 40px; }
+	.font-size-64 { font-size: 40px; }
+	.font-size-66 { font-size: 40px; }
+	.font-size-68 { font-size: 42px; }
+	.font-size-70 { font-size: 42px; }
+	.font-size-72 { font-size: 42px; }
+	.font-size-74 { font-size: 44px; }
+	.font-size-76 { font-size: 44px; }
+	.font-size-78 { font-size: 44px; }
+	.font-size-80 { font-size: 46px; }
+	.font-size-82 { font-size: 46px; }
+	.font-size-84 { font-size: 46px; }
+	.font-size-86 { font-size: 48px; }
+	.font-size-88 { font-size: 48px; }
+	.font-size-90 { font-size: 48px; }
+	.font-size-92 { font-size: 50px; }
+	.font-size-94 { font-size: 50px; }
+	.font-size-96 { font-size: 50px; }
+	.font-size-98 { font-size: 52px; }
+	.font-size-100 { font-size: 54px; }
+}
+
+@media (min-width: 992px) {
+	.font-size-10 { font-size: 10px; }
+	.font-size-11 { font-size: 11px; }
+	.font-size-12 { font-size: 12px; }
+	.font-size-13 {	font-size: 13px; }
+	.font-size-22 {	font-size: 22px; }
+	.font-size-24 {	font-size: 24px; }
+	.font-size-26 {	font-size: 26px; }
+	.font-size-28 {	font-size: 28px; }
+	.font-size-30 {	font-size: 30px; }
+	.font-size-32 {	font-size: 32px; }
+	.font-size-34 { font-size: 34px; }
+	.font-size-36 { font-size: 36px; }
+	.font-size-38 { font-size: 38px; }
+	.font-size-40 { font-size: 40px; }
+	.font-size-42 { font-size: 42px; }
+	.font-size-44 { font-size: 44px; }
+	.font-size-46 { font-size: 46px; }
+	.font-size-48 { font-size: 48px; }
+	.font-size-50 { font-size: 50px; }
+	.font-size-52 { font-size: 52px; }
+	.font-size-54 { font-size: 54px; }
+	.font-size-56 { font-size: 56px; }
+	.font-size-58 { font-size: 58px; }
+	.font-size-60 { font-size: 60px; }
+	.font-size-62 { font-size: 62px; }
+	.font-size-64 { font-size: 64px; }
+	.font-size-66 { font-size: 66px; }
+	.font-size-68 { font-size: 68px; }
+	.font-size-70 { font-size: 70px; }
+	.font-size-72 { font-size: 72px; }
+	.font-size-74 { font-size: 74px; }
+	.font-size-76 { font-size: 76px; }
+	.font-size-78 { font-size: 78px; }
+	.font-size-80 { font-size: 80px; }
+	.font-size-82 { font-size: 82px; }
+	.font-size-84 { font-size: 82px; }
+	.font-size-86 { font-size: 84px; }
+	.font-size-88 { font-size: 84px; }
+	.font-size-90 { font-size: 86px; }
+	.font-size-92 { font-size: 88px; }
+	.font-size-94 { font-size: 90px; }
+	.font-size-96 { font-size: 90px; }
+	.font-size-98 { font-size: 92px; }
+	.font-size-100 { font-size: 94px; }
+}
+
+@media (min-width: 1200px) {
+	.font-size-84 { font-size: 84px; }
+	.font-size-86 { font-size: 86px; }
+	.font-size-88 { font-size: 88px; }
+	.font-size-90 { font-size: 90px; }
+	.font-size-92 { font-size: 92px; }
+	.font-size-94 { font-size: 94px; }
+	.font-size-96 { font-size: 96px; }
+	.font-size-98 { font-size: 98px; }
+	.font-size-100 { font-size: 100px; }
+}

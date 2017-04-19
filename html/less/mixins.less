@@ -1,0 +1,139 @@
+@import "variables.less";
+
+.BorderRadius(@radius: 5px) {
+	border-radius: @radius;
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+}
+
+.BorderRadius(@topleft, @topright, @bottomright, @bottomleft) {
+	border-top-right-radius: @topright;
+	border-bottom-right-radius: @bottomright;
+	border-bottom-left-radius: @bottomleft;
+	border-top-left-radius: @topleft;
+
+	-moz-border-top-right-radius: @topright;
+	-moz-border-bottom-right-radius: @bottomright;
+	-moz-border-bottom-left-radius: @bottomleft;
+	-moz-border-top-left-radius: @topleft;
+
+	-webkit-border-top-right-radius: @topright;
+	-webkit-border-bottom-right-radius: @bottomright;
+	-webkit-border-bottom-left-radius: @bottomleft;
+	-webkit-border-top-left-radius: @topleft;
+}
+
+.PaddingBox() {
+	background-clip: padding-box;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+}
+
+.Opacity(@opacity: 0.5) {
+	opacity: @opacity;
+	-moz-opacity: @opacity;
+	-webkit-opacity: @opacity;
+}
+
+.Transition(@transition1) {
+	transition: @transition1;
+	-o-transition: @transition1;
+	-ms-transition: @transition1;
+	-moz-transition: @transition1;
+	-webkit-transition: @transition1;
+}
+
+.Transition(@transition1, @transition2) {
+	transition: @transition1, @transition2;
+	-o-transition: @transition1, @transition2;
+	-ms-transition: @transition1, @transition2;
+	-moz-transition: @transition1, @transition2;
+	-webkit-transition: @transition1, @transition2;
+}
+
+.Transition(@transition1, @transition2, @transition3) {
+	transition: @transition1, @transition2, @transition3;
+	-o-transition: @transition1, @transition2, @transition3;
+	-ms-transition: @transition1, @transition2, @transition3;
+	-moz-transition: @transition1, @transition2, @transition3;
+	-webkit-transition: @transition1, @transition2, @transition3;
+}
+
+.Transform(@string) {
+	transform: @string;
+	-o-transform: @string;
+	-ms-transform: @string;
+	-moz-transform: @string;
+	-webkit-transform: @string;
+}
+
+.Scale(@factor) {
+	transform: scale(@factor);
+	-o-transform: scale(@factor);
+	-ms-transform: scale(@factor);
+	-moz-transform: scale(@factor);
+	-webkit-transform: scale(@factor);
+}
+
+.Rotate(@degree) {
+	transform: rotate(@degree);
+	-o-transform: rotate(@degree);
+	-ms-transform: rotate(@degree);
+	-moz-transform: rotate(@degree);
+	-webkit-transform: rotate(@degree);
+} 
+
+.Skew(@degree, @degree2) {
+	transform: skew(@degree, @degree2);
+	-o-transform: skew(@degree, @degree2);
+	-ms-transform: skew(@degree, @degree2);
+	-moz-transform: skew(@degree, @degree2);
+	-webkit-transform: skew(@degree, @degree2);
+} 
+
+.TranslateX(@x) {
+	transform: translateX(@x);
+	-o-transform: translateX(@x);
+	-ms-transform: translateX(@x);
+	-moz-transform: translateX(@x);
+	-webkit-transform: translateX(@x);
+}
+
+.TranslateY(@y) {
+	transform: translateY(@y);
+	-o-transform: translateY(@y);
+	-ms-transform: translateY(@y);
+	-moz-transform: translateY(@y);
+	-webkit-transform: translateY(@y);
+}
+
+.Translate(@x, @y: 0) {
+	transform: translate(@x, @y);
+	-o-transform: translate(@x, @y);
+	-ms-transform: translate(@x, @y);
+	-moz-transform: translate(@x, @y);
+	-webkit-transform: translate(@x, @y);
+}
+
+.Translate3D(@x, @y: 0, @z: 0) {
+	transform: translate3d(@x, @y, @z);
+	-o-transform: translate3d(@x, @y, @z);
+	-ms-transform: translate3d(@x, @y, @z);
+	-moz-transform: translate3d(@x, @y, @z);
+	-webkit-transform: translate3d(@x, @y, @z);
+}
+
+.Animation(@anim) {
+	animation: @anim;
+	-o-animation: @anim;
+	-ms-animation: @anim;
+	-webkit-animation: @anim;
+	-moz-animation: @anim;
+}
+
+.BoxShadow(@shadow) {
+	box-shadow: @shadow;
+	-o-box-shadow: @shadow;
+	-moz-box-shadow: @shadow;
+	-webkit-box-shadow: @shadow;
+}

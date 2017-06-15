@@ -9,18 +9,39 @@ HTML5 Website template to help you create beautiful websited faster.
   - Sidepanel
   - Sliders
   - Blog
+  - Elegant Icons
   
   ### Widgets
   
-    - Navigation
-    - Posts
-    - Comments
-    - Twitter
-    - Flickr
-    - Subscribe
-    - Cart
+  - Navigation
+  - Posts
+  - Comments
+  - Twitter
+  - Flickr
+  - Subscribe
+  - Cart
     
   ### Elements
   
-    - Buttons
-    - Icon Lists
+  - Buttons
+  - Icon Lists
+  - Social Icons
+  - Breadcrumb
+  - Alerts
+  - Icon Box
+  - Promo Box (Call to Action)
+  - Pricing Tables
+  - Accordion
+  - Tabs
+  - Progress Bar
+  - Countdown
+  - Counter
+  - Photo Box
+  - Badge
+  - Label
+  - Dropcap
+  - Tooltip
+  - Popover
+  - Modal
+  - Pagination
+  - Pie Chart

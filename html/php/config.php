@@ -5,14 +5,14 @@
      */
     
     // Consumer Key
-    define('CONSUMER_KEY', 'snoJB5txIbmEEB9g3glMHoHdL');
-    define('CONSUMER_SECRET', 'wvDdrB9kYRjQWokGwKS1nNLwgQYXyY21Ofcjs2RXRZeeryrBgC');
+    define('CONSUMER_KEY', '');
+    define('CONSUMER_SECRET', '');
 
     // User Access Token
-    define('ACCESS_TOKEN', '702831024-Irhb3YDMMXXqFxplskzyulhZsxUHJ2IG8EN8fprC');
-    define('ACCESS_SECRET', 'YoWBw0e93PKsZiwEQq5AC1xBvZW53UdHO7XRWyiCf1UPf');
+    define('ACCESS_TOKEN', '');
+    define('ACCESS_SECRET', '');
 	
 	// Cache Settings
-	define('CACHE_ENABLED', false);
-	define('CACHE_LIFETIME', 3600); // in seconds
-	define('HASH_SALT', md5(dirname(__FILE__)));
+	define('CACHE_ENABLED', );
+	define('CACHE_LIFETIME', ); // in seconds
+	define('HASH_SALT', );
